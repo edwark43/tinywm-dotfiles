@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+echo 'krnl:' $(uname -r)
+if pidof -q systemd; then
+	echo 'init: systemd'
+elif [ -f '/sbin/openrc' ]; then
+	echo 'init: openrc'
+elif [ -f '/sbin/dinit' ]; then
+	echo 'init: dinit'
+else
+	cut -d ' ' -f 1 /proc/1/comm
+fi
+echo 'pkgs:' $(pacman -Q | wc -l) '('$(($(pacman -Q | wc -l)-25)) 'too many)'
+echo 'os:' $(awk -F '"' '/PRETTY_NAME/ { print $2 }' /etc/os-release)
+echo 'disk:' $(df -h --output=used,size / | awk 'NR == 2 { print $1" / "$2 }')
+echo 'mem:' $(free --mega | awk 'NR == 2 { print $3" / "$2" MB" }')
+echo 'up:' $(uptime -p | sed 's/up//')
+wms=('sway' 'kiwmi' 'wayfire' 'sowm' 'catwm' 'fvwm' 'dwm' '2bwm' 'monsterwm' 'tinywm' 'xmonad')
+for current_wm in "${wms[@]}"; do
+	if pgrep -x "$current_wm" 2>/dev/null >&2; then
+		wm="${current_wm}";
+		break
+	fi
+done
+echo 'wm:' ${wm:-unknown}

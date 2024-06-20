@@ -1,0 +1,13 @@
+feh
+git
+opendoas
+xorg-server
+xorg-xinit
+neovim, vim, or vi 
+nnn
+polybar 
+ttf-jetbrains-mono
+w3m
+xorg-xrandr
+st (aur compiled with custom config.h)
+tinywm (aur)

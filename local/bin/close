@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+kill $(ps aux|grep /usr/bin/tinywm|awk '{print $2}'|head -n -1)
