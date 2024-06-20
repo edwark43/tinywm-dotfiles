@@ -12,7 +12,7 @@ Next, copy the contents of home to your home directory, and don't forget the hid
 Done!
 
 ## preview
-![Screenshot_archlinux_2024-06-20_13_48_32](https://github.com/edwark43/tinywm-dotfiles/assets/97860398/f6120b24-87d2-427d-94fa-43b073cf821b)
+![screenshotvm](https://github.com/edwark43/tinywm-dotfiles/assets/97860398/f130d225-5eef-4b9d-aa77-14763badd509)
 
 ## note
 If anyone actually installs this, and it doesn't work, create an issue because I don't want to reinstall this to test it.
