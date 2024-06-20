@@ -3,7 +3,7 @@ git
 opendoas
 xorg-server
 xorg-xinit
-neovim, vim, or vi 
+neovim 
 nnn
 polybar 
 ttf-jetbrains-mono
