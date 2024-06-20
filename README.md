@@ -1,5 +1,5 @@
 # tinywm-dotfiles
-This took too long for it's quality.
+This took too long relative to it's quality.
 ## installation
 I installed this on an Arch Linux virtual machine, but this should work with any distro with minor adjustments.
 
