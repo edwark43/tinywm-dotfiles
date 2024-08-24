@@ -19,4 +19,4 @@ If anyone actually installs this, and it doesn't work, create an issue because I
 
 ## credits
 https://github.com/Apeiros-46B/everforest-walls - wallpaper <br>
-https://github.com/edwark43/dotfiles - polybar config from my main dotfiles that I debloated
+https://github.com/edwark43/dotfiles - altered polybar config from my main dotfiles
